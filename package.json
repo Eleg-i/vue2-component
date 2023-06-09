@@ -1,0 +1,60 @@
+{
+  "name": "@cailiao/watermark-vue2-component",
+  "version": "0.1.0",
+  "description": "@cailiao/watermark 的 vue2 组件封装。(A vue2 component encapsulation of @cailiao/watermark.)",
+  "type": "module",
+  "module": "dist/watermarkVue2Component.esm.browser.min.js",
+  "main": "dist/watermarkVue2Component.cjs.browser.min.js",
+  "entry": "index.js",
+  "outfile": "watermarkVue2Component",
+  "keywords": [
+    "watermark",
+    "vue2",
+    "vue",
+    "component"
+  ],
+  "author": "cailiao(Eleg-i)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleg-i/watermark-vue2-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eleg-i/watermark-vue2-component/issues"
+  },
+  "homepage": "https://github.com/Eleg-i/watermark-vue2-component/#readme",
+  "license": "ISC",
+  "scripts": {
+    "build-watch": "vite build --watch",
+    "build": "vite build",
+    "lint": "prettier --check src test script & eslint --ext .js,.vue src test script",
+    "lint:fix": "prettier --write src test script & eslint --fix --ext .js,.vue src test script",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build -s",
+    "patch": "npm version patch && npm i",
+    "minor": "npm version minor && npm i",
+    "major": "npm version major && npm i",
+    "publish": "npm publish",
+    "postpublish": "git push origin master --follow-tags",
+    "toc": "doctoc --github --title \"# Changelog\" CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/eslint-parser": "latest",
+    "@babel/plugin-syntax-import-assertions": "latest",
+    "@babel/preset-env": "latest",
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-html": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "vite": "^4.3.2",
+    "vite-plugin-css-injected-by-js": "^3.1.1"
+  },
+  "dependencies": {
+    "@cailiao/watermark": "file:../.."
+  },
+  "workspaces": [
+    "test/*"
+  ]
+}
