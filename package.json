@@ -1,6 +1,6 @@
 {
   "name": "@cailiao/watermark-vue2-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "@cailiao/watermark 的 vue2 组件封装。(A vue2 component encapsulation of @cailiao/watermark.)",
   "type": "module",
   "module": "dist/watermarkVue2Component.esm.browser.min.js",
