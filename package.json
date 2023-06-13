@@ -7,6 +7,11 @@
   "main": "dist/watermarkVue2Component.cjs.browser.min.js",
   "entry": "index.js",
   "outfile": "watermarkVue2Component",
+  "files": [
+    "dist",
+    "README.md",
+    "readme"
+  ],
   "keywords": [
     "watermark",
     "vue2",
