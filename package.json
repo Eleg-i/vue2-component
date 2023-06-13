@@ -57,7 +57,7 @@
     "vite-plugin-css-injected-by-js": "^3.1.1"
   },
   "dependencies": {
-    "@cailiao/watermark": "^0.1.0"
+    "@cailiao/watermark": "^0.1.1"
   },
   "workspaces": [
     "test/*"
