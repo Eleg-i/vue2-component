@@ -1,6 +1,6 @@
 # watermark/vue2-component —— 水印
 
-简体中文 | [English](../README.md)
+[简体中文](readme/README-zh-cn.md) | English
 
 ## 描述
 
