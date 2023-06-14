@@ -37,11 +37,12 @@ The component parameters are the same as the parameters in [watermark](https://g
 | ---------- | ------ | -------------- | --------------------------- |
 | className  | Optional   | String         | Container class name, default is "watermark". |
 | content    | Optional   | String         | Watermark text.                    |
+| disabled   | Optional   | Boolean        | Whether to disable the watermark, the default is false.  |
 | font       | Optional   | Object         | Font-related configuration.            |
 | gap        | Optional   | Number         | Watermark column spacing.                 |
 | image      | Optional   | String         | Watermark image.                    |
 | lineHeight | Optional   | String\|Number | Text line height.                  |
-| offset     | Optional   | Array<Number>  | Watermark row offset.           |
+| offset     | Optional   | Array\<Number\>  | Watermark row offset.           |
 | rotate     | Optional   | Number         | Watermark rotation angle.         |
 | zIndex     | Optional   | Number         | Watermark positioning z-index.        |
 
