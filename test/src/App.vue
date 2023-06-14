@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div>其它元素</div>
-    <Watermark>
+    <Watermark :disabled="disabled">
       <div id="container">
         <p>内容内容内容内容内容内容内容内容</p>
         <p>内容内容内容内容内容内容内容内容</p>
@@ -42,7 +42,8 @@ export default {
   },
   data() {
     return {
-      show: true
+      show: true,
+      disabled: false
     }
   }
 }

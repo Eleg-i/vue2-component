@@ -18,6 +18,11 @@ export default {
       default: undefined,
       type: [String, Array]
     },
+    // 是否禁用
+    disabled: {
+      default: false,
+      type: Boolean
+    },
     font: {
       default: undefined,
       type: Object
@@ -86,19 +91,25 @@ export default {
     this.init()
   },
   async updated() {
-    if (this._blockUpdate) {
-      await this.$nextTick()
-      this._blockUpdate = false
-    } else this.mountWatermark()
+    if (!this.disabled) {
+      if (this._blockUpdate) {
+        await this.$nextTick()
+        this._blockUpdate = false
+      } else this.mountWatermark()
+    } else {
+      this.destroy?.()
+    }
   },
   beforeDestroy() {
     this.destroy?.()
   },
   methods: {
     async init() {
-      this.watermark = new Watermark(this.config)
-      await this.mountWatermark()
-      this.$emit('inited')
+      if (!this.disabled) {
+        this.watermark = new Watermark(this.config)
+        await this.mountWatermark()
+        this.$emit('inited')
+      }
     },
     async mountWatermark() {
       const { destroy, $el: rootEl, watermark, _targetDestroyMtds: targetDestroyMtds } = this,

@@ -37,11 +37,12 @@ Vue.component('Watermark', Component)
 | ---------- | ------ | -------------- | --------------------------- |
 | className  | 可选   | String         | 容器类名，默认为 watermark. |
 | content    | 可选   | String         | 水印文本                    |
+| disabled   | 可选   | Boolean        | 是否禁用水印，默认为 false.  |
 | font       | 可选   | Object         | 字体相关配置                |
 | gap        | 可选   | Number         | 水印列间距                  |
 | image      | 可选   | String         | 水印图片                    |
 | lineHeight | 可选   | String\|Number | 文本行高                    |
-| offset     | 可选   | Array<Number>  | 水印行偏移                  |
+| offset     | 可选   | Array\<Number\>  | 水印行偏移                  |
 | rotate     | 可选   | Number         | 水印旋转角度                |
 | zIndex     | 可选   | Number         | 水印定位叠层                |
 
