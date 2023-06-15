@@ -29,8 +29,8 @@
   "homepage": "https://github.com/Eleg-i/watermark-vue2-component/#readme",
   "license": "ISC",
   "scripts": {
-    "build-watch": "vite build --watch",
-    "build": "vite build",
+    "build-watch": "node ./script/build-watch.js",
+    "build": "node ./script/build.js",
     "lint": "prettier --check src test script & eslint --ext .js,.vue src test script",
     "lint:fix": "prettier --write src test script & eslint --fix --ext .js,.vue src test script",
     "prepare": "husky install",
@@ -57,7 +57,7 @@
     "vite-plugin-css-injected-by-js": "^3.1.1"
   },
   "dependencies": {
-    "@cailiao/watermark": "^0.1.1"
+    "@cailiao/watermark": "file:../.."
   },
   "workspaces": [
     "test/*"
